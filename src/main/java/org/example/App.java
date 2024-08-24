@@ -22,6 +22,7 @@ import java.util.stream.Collectors;
 public class App 
 {
     public static void main( String[] args ) throws ParseException {
+//        String s = new String();
         final String formattedDate = getFormattedDate("10/10/2000");
         System.out.println(formattedDate);
     }
