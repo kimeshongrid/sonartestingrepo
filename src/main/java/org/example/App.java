@@ -31,6 +31,9 @@ public class App
             System.out.println("x is greater than y");
         }  else {
             System.out.println("x is less than y");
+            System.out.println("x is less than y");
+            System.out.println("x is less than y");
+            System.out.println("x is less than y");
 
         }
     }
