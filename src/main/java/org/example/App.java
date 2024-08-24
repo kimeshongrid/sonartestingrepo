@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicReference;
+import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
 /**
@@ -21,20 +22,16 @@ import java.util.stream.Collectors;
  */
 public class App 
 {
-    public static void main( String[] args ) throws ParseException {
+    public static void main( String[] args ) {
         int x = 10;
         int y = 20;
 
-
+        Logger log = Logger.getLogger("Main");
         // Cyclomatic complexity
         if (x > y) {
-            System.out.println("x is greater than y");
+            log.info("x is greater than y");
         }  else {
-            System.out.println("x is less than y");
-            System.out.println("x is less than y");
-            System.out.println("x is less than y");
-            System.out.println("x is less than y");
-
+            log.info("x is less than y");
         }
     }
 }
