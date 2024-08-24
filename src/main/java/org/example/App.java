@@ -22,35 +22,33 @@ import java.util.stream.Collectors;
 public class App 
 {
     public static void main( String[] args ) throws ParseException {
-//        String s = new String();
-        final String formattedDate = getFormattedDate("10/10/2000");
-        System.out.println(formattedDate);
+        int x = 10;
+        int y = 20;
+
+        // Long method
+        longMethod(x, y);
+
+        // Cyclomatic complexity
+        if (x > y) {
+            System.out.println("x is greater than y");
+        } else if (x == y) {
+            System.out.println("x is equal to y");
+        } else {
+            System.out.println("x is less than y");
+
+        }
+
+        // Duplicated code
+        String str1 = "Hello";
+        String str2 = "World";
+        System.out.println(str1 + " " + str2);
+        System.out.println(str1 + " " + str2);
     }
-
-    public static String getFormattedDate(String date) throws ParseException {
-
-
-        final SimpleDateFormat outputDateFormat = new SimpleDateFormat("yyyy-MM-dd");
-
-        final List<SimpleDateFormat> knownDatePatterns = new ArrayList<>();
-        knownDatePatterns.add(new SimpleDateFormat("dd-MM-yyyy"));
-        knownDatePatterns.add(new SimpleDateFormat("dd/MM/yyyy"));
-        knownDatePatterns.add(new SimpleDateFormat("yyyy"));
-
-        Date formattedDate = null;
-        for(SimpleDateFormat dateFormat : knownDatePatterns){
-
-            try {
-                formattedDate = dateFormat.parse(date);
-                break;
-            } catch (ParseException ignored) {
-            }
+    // Long method
+    public static void longMethod(int a, int b) {
+        // Do a lot of things here
+        for (int i = 0; i < 1000; i++) {
+            // ...
         }
-        if(formattedDate != null){
-            return outputDateFormat.format(formattedDate);
-        } else{
-            return date;
-        }
-
     }
 }
