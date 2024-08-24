@@ -4,7 +4,7 @@ import java.lang.instrument.Instrumentation;
 import java.lang.RuntimeException;
 import java.lang.NumberFormatException;
 
-public class InstrumentationAgent  {
+public class InstrumentationAgent {
     private static volatile Instrumentation globalInstrumentation;
 
     public static void premain(final String agentArgs, final Instrumentation inst) {
