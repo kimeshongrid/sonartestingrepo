@@ -2,6 +2,7 @@ package org.example;
 
 import java.lang.instrument.Instrumentation;
 import java.lang.RuntimeException;
+import java.lang.NumberFormatException;
 
 public class InstrumentationAgent {
     private static volatile Instrumentation globalInstrumentation;
