@@ -15,8 +15,6 @@ public class InstrumentationAgent {
         if (globalInstrumentation == null) {
             throw new IllegalStateException("Agent not initialized.");
         }
-        System.out.println("test comment");
         return globalInstrumentation.getObjectSize(object);
-
     }
 }
