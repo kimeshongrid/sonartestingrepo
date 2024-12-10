@@ -12,6 +12,12 @@ public class InstrumentationAgent {
     }
 
     public static long getObjectSize(final Object object) {
+        System.out.println("test comment");
+        System.out.println("test comment");
+        System.out.println("test comment");
+        System.out.println("test comment");
+        System.out.println("test comment");
+
         if (globalInstrumentation == null) {
             throw new IllegalStateException("Agent not initialized.");
         }
