@@ -25,30 +25,16 @@ public class App
         int x = 10;
         int y = 20;
 
-        // Long method
-        longMethod(x, y);
 
         // Cyclomatic complexity
         if (x > y) {
             System.out.println("x is greater than y");
-        } else if (x == y) {
-            System.out.println("x is equal to y");
-        } else {
+        }  else {
+            System.out.println("x is less than y");
+            System.out.println("x is less than y");
+            System.out.println("x is less than y");
             System.out.println("x is less than y");
 
-        }
-
-        // Duplicated code
-        String str1 = "Hello";
-        String str2 = "World";
-        System.out.println(str1 + " " + str2);
-        System.out.println(str1 + " " + str2);
-    }
-    // Long method
-    public static void longMethod(int a, int b) {
-        // Do a lot of things here
-        for (int i = 0; i < 1000; i++) {
-            // ...
         }
     }
 }
